@@ -1,0 +1,107 @@
+<!-- ClubIndex -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息技术社</title>
+    <link rel="Bookmark" type="image/x-icon" href="./ITSlogo.ico">
+    <link rel="icon" type="image/x-icon" href="./ITSlogo.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./ITSlogo.ico">
+    <style>
+        /* * {
+            border: 1px solid black;
+        } */
+        body{
+        margin: 0;
+        /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+        height: 100vh;
+        background-color: #eee;
+        }
+        /* 弹性盒子 */
+        .flex{
+            display: flex;
+        }
+        /* 竖向 */
+        .column{
+            flex-direction: column;
+        }
+        /* 阴影 */
+        .yinYing {
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+            rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        }
+        /* 白色背景 */
+        .white_bg{
+            background-color: white;
+        }
+        /* 上下左右外边距 */
+        .mg8 {
+            margin: 8px;
+        }
+        /* 右外边距 */
+        .mgr8 {
+            margin-right: 8px;
+        }
+        /* 上外边距 */
+        .mgt8 {
+            margin-top: 8px;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .daoHang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+</head>
+
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div class="flex column white_bg mgr8" style="width: 200px;">
+        <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex yinYing"
+        >
+        <img
+          alt="logo"
+          src="./ITClogo.png"
+          width="40px"
+          height="40px"
+        />
+        <div style="margin-left: 10px" class="yinYing">信息技术社</div>
+        </div>
+            <button onclick="window.open('./ClubHome.html')" class="daoHang yinYing mg8">首页</button>
+            <button onclick="window.open('./ClubMembers.html')" class="daoHang yinYing mg8">成员</button>
+            <button onclick="window.open('http:\/\/qjwx.cn')" class="daoHang yinYing mg8">其他</button>
+        </div>
+        
+
+    </div>
+    <!-- 主页栏 -->
+    <div class="flex mg8 yinYing" style="
+
+    /* justify-content: center;  */
+    align-content: center; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    /* font-size: 18px;  */
+    flex: 4;
+    ">
+        <div class="white_bg yinYing"><h1>一个未完工的无聊网站</h1></div>
+        <!-- 这里做嵌套 首页:简述 成员 其他:学校官网 -->
+        <!-- 最好给简述的文字添加点渐变样式 -->
+    </div>
+
+</body>
+
+</html>
